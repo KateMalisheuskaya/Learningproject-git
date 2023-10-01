@@ -1,0 +1,9 @@
+{
+	"name": "Learningproject-dev-adf",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fc5a9a7f-1902-4e0c-899e-ec3e2ad9a4e2",
+		"tenantId": "958fe06e-d1c3-4506-8f22-3b1d4f013a47"
+	}
+}
