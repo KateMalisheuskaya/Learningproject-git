@@ -22,7 +22,7 @@
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 10,
-				"startTime": "2023-10-02T18:22:00",
+				"startTime": "2023-10-02T18:29:00",
 				"timeZone": "Central European Standard Time"
 			}
 		}
