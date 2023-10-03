@@ -274,44 +274,6 @@
 				"[concat(variables('factoryId'), '/datasets/DS_input')]",
 				"[concat(variables('factoryId'), '/datasets/DS_output')]"
 			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/trigger1')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "Copy_data_pipeline",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					},
-					{
-						"pipelineReference": {
-							"referenceName": "pipeline_wait",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "ScheduleTrigger",
-				"typeProperties": {
-					"recurrence": {
-						"frequency": "Minute",
-						"interval": 1,
-						"startTime": "2023-10-02T18:29:00",
-						"timeZone": "Central European Standard Time"
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/Copy_data_pipeline')]",
-				"[concat(variables('factoryId'), '/pipelines/pipeline_wait')]"
-			]
 		}
 	]
 }
